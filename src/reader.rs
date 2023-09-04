@@ -56,6 +56,10 @@ where
             Ok(maybe_block.map(|b| (b, this)))
         })
     }
+
+    pub fn reader(&self) -> &R {
+        &self.reader
+    }
 }
 
 #[cfg(test)]
